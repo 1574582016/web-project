@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/web-project.iml" filepath="$PROJECT_DIR$/web-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-core/web-project-core.iml" filepath="$PROJECT_DIR$/web-project-core/web-project-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-economy/web-project-economy.iml" filepath="$PROJECT_DIR$/web-project-economy/web-project-economy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-economy/web-project-economy-api/web-project-economy-api.iml" filepath="$PROJECT_DIR$/web-project-economy/web-project-economy-api/web-project-economy-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-economy/web-project-economy-service/web-project-economy-service.iml" filepath="$PROJECT_DIR$/web-project-economy/web-project-economy-service/web-project-economy-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-economy/web-project-economy-web/web-project-economy-web.iml" filepath="$PROJECT_DIR$/web-project-economy/web-project-economy-web/web-project-economy-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-eureka/web-project-eureka.iml" filepath="$PROJECT_DIR$/web-project-eureka/web-project-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-learn/web-project-learn.iml" filepath="$PROJECT_DIR$/web-project-learn/web-project-learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-learn/web-project-learn-api/web-project-learn-api.iml" filepath="$PROJECT_DIR$/web-project-learn/web-project-learn-api/web-project-learn-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-learn/web-project-learn-service/web-project-learn-service.iml" filepath="$PROJECT_DIR$/web-project-learn/web-project-learn-service/web-project-learn-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-learn/web-project-learn-web/web-project-learn-web.iml" filepath="$PROJECT_DIR$/web-project-learn/web-project-learn-web/web-project-learn-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-system/web-project-system.iml" filepath="$PROJECT_DIR$/web-project-system/web-project-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-system/web-project-system-api/web-project-system-api.iml" filepath="$PROJECT_DIR$/web-project-system/web-project-system-api/web-project-system-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-system/web-project-system-service/web-project-system-service.iml" filepath="$PROJECT_DIR$/web-project-system/web-project-system-service/web-project-system-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-project-system/web-project-system-web/web-project-system-web.iml" filepath="$PROJECT_DIR$/web-project-system/web-project-system-web/web-project-system-web.iml" />
+    </modules>
+  </component>
+</project>
