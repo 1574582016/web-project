@@ -22,4 +22,9 @@ public class IndexApiController extends AbstractController {
     public Object getSystemMenuList(){
         return ResponseEntity.ok(MapSuccess("查询成功" , postJsonObjectData(apiSystemMenuList,null)));
     }
+
+    @PostMapping("/getSelectOption")
+    public Object getSystemMenuList(String indetity){
+        return ResponseEntity.ok(MapSuccess("查询成功" , postJsonObjectData(selectOption + indetity ,null)));
+    }
 }

@@ -107,7 +107,7 @@ $(function(){
 
     function drawMenuTree() {
         var arrayData ;
-        $.APIPost("/api/economy/getEconomyMarketTree",function (data) {
+        $.APIPost("/api/finance/getFinanceMarketTree",function (data) {
             arrayData = data.data.result;
             $('#tree').treeview({
                 data: data.data.result,         // 数据源

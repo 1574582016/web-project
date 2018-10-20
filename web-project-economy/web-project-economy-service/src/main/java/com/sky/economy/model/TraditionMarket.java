@@ -5,10 +5,10 @@ import com.baomidou.mybatisplus.annotations.TableName;
 import com.sky.core.model.BaseModel;
 
 /**
- * Created by lxl on 2018/9/28.
+ * Created by ThinkPad on 2018/10/20.
  */
-@TableName("economy_market")
-public class EconomyMarket extends BaseModel<EconomyMarket>{
+@TableName("tradition_market")
+public class TraditionMarket extends BaseModel<TraditionMarket> {
 
     @TableField(value = "market_code")
     private String marketCode ;
@@ -16,8 +16,8 @@ public class EconomyMarket extends BaseModel<EconomyMarket>{
     @TableField(value = "market_name")
     private String marketName ;
 
-    @TableField(value = "parent_code")
-    private String parentCode ;
+    @TableField(value = "market_type")
+    private String marketType ;
 
     @TableField(value = "describe")
     private String describe ;
@@ -38,12 +38,12 @@ public class EconomyMarket extends BaseModel<EconomyMarket>{
         this.marketName = marketName;
     }
 
-    public String getParentCode() {
-        return parentCode;
+    public String getMarketType() {
+        return marketType;
     }
 
-    public void setParentCode(String parentCode) {
-        this.parentCode = parentCode;
+    public void setMarketType(String marketType) {
+        this.marketType = marketType;
     }
 
     public String getDescribe() {

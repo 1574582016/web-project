@@ -81,4 +81,5 @@ system:
 api:
     system:
       menuList: http://SYSTEM-SERVER/api/menu/getMenuList
+      selectOption: http://SYSTEM-SERVER/api/param/getParamListByIndetity?indetity=
 

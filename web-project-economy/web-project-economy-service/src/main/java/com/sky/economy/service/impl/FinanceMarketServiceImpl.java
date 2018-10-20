@@ -1,9 +1,9 @@
 package com.sky.economy.service.impl;
 
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import com.sky.economy.mapper.EconomyMarketMapper;
-import com.sky.economy.model.EconomyMarket;
-import com.sky.economy.service.EconomyMarketService;
+import com.sky.economy.mapper.FinanceMarketMapper;
+import com.sky.economy.model.FinanceMarket;
+import com.sky.economy.service.FinanceMarketService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,5 +12,5 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional
-public class EconomyMarketServiceImpl extends ServiceImpl<EconomyMarketMapper ,EconomyMarket> implements EconomyMarketService{
+public class FinanceMarketServiceImpl extends ServiceImpl<FinanceMarketMapper,FinanceMarket> implements FinanceMarketService {
 }

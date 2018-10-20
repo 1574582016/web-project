@@ -2,10 +2,9 @@ package com.sky.economy.api.controller;
 
 import com.sky.core.model.TreeNode;
 import com.sky.economy.api.AbstractController;
-import com.sky.economy.model.EconomyMarket;
+import com.sky.economy.model.FinanceMarket;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,16 +17,16 @@ import java.util.List;
  * Created by ThinkPad on 2018/10/17.
  */
 @RestController
-@RequestMapping("/api/economy")
-public class EconomyMarketApiController extends AbstractController {
+@RequestMapping("/api/finance")
+public class FinanceMarketApiController extends AbstractController {
 
-    @PostMapping("/getEconomyMarketTree")
-    public Object getEconomyMarketTree(){
-        List<EconomyMarket> list = economyMarketService.selectList(null);
+    @PostMapping("/getFinanceMarketTree")
+    public Object getFinanceMarketTree(){
+        List<FinanceMarket> list = financeMarketService.selectList(null);
         List<TreeNode> nodeList = new ArrayList<TreeNode>();
-        Iterator<EconomyMarket> iterator = list.iterator();
+        Iterator<FinanceMarket> iterator = list.iterator();
         while (iterator.hasNext()){
-            EconomyMarket economyMarket = iterator.next();
+            FinanceMarket economyMarket = iterator.next();
             if(economyMarket.getParentCode().equals("market")){
                TreeNode treeNode = new TreeNode(false ,false ,false ,false);
                 treeNode.setText(economyMarket.getMarketName());
@@ -44,11 +43,11 @@ public class EconomyMarketApiController extends AbstractController {
     }
 
 
-    private void getEconomyMarketRecursion(List<EconomyMarket> list , TreeNode node){
-        Iterator<EconomyMarket> iterator = list.iterator();
+    private void getEconomyMarketRecursion(List<FinanceMarket> list , TreeNode node){
+        Iterator<FinanceMarket> iterator = list.iterator();
         List<TreeNode> nodeList = new ArrayList<TreeNode>();
         while (iterator.hasNext()){
-            EconomyMarket economyMarket = iterator.next();
+            FinanceMarket economyMarket = iterator.next();
             if(economyMarket.getParentCode().equals(node.getCode())){
                 TreeNode treeNode = new TreeNode(false ,false ,false ,false);
                 treeNode.setText(economyMarket.getMarketName());

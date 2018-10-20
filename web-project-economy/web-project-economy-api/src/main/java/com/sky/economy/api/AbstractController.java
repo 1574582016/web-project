@@ -1,7 +1,8 @@
 package com.sky.economy.api;
 
 import com.sky.core.controller.BaseController;
-import com.sky.economy.service.EconomyMarketService;
+import com.sky.economy.service.FinanceMarketService;
+import com.sky.economy.service.TraditionMarketService;
 import net.sf.json.JSONObject;
 import net.sf.json.xml.XMLSerializer;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,9 @@ public class AbstractController extends BaseController {
     @Value("${api.system.menuList}")
     protected  String apiSystemMenuList;
 
+    @Value("${api.system.selectOption}")
+    protected  String selectOption;
+
     @Autowired
     protected RestTemplate restTemplate;
 
@@ -30,6 +34,9 @@ public class AbstractController extends BaseController {
     }
 
     @Autowired
-    protected EconomyMarketService economyMarketService;
+    protected FinanceMarketService financeMarketService;
+
+    @Autowired
+    protected TraditionMarketService traditionMarketService ;
 
 }
